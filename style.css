@@ -1,0 +1,129 @@
+/* GLOBAL STYLES */
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: hsla(240, 2%, 8%, 1);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+a{
+  color: rgba(255, 255, 255, 0.87);
+  text-decoration: none;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.card{
+  border: 1px solid hsla(240, 4%, 18%, 1);
+  background-color: hsla(240, 6%, 12%, 1);
+  border-radius: 5px;
+}
+
+.card__body{
+  padding: 1em 2em;
+}
+
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid hsla(240, 4%, 18%, 1);
+  padding: 1em 2em;
+
+}
+
+
+#logo{
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+}
+
+.note__preview{
+  display: flex;
+  padding: 0.5em;
+  gap: 2em;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+
+.date-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
+  background-color: hsla(240, 2%, 8%, 1);
+}
+
+.date-wrapper small{
+  font-size: 10px;
+}
+
+.date-wrapper strong{
+  font-size: 14px;
+}
+
+/* FORM STYLES */
+
+
+.form_field{
+  display: flex;
+  flex-direction: column;
+  margin:1em 0
+}
+
+.form_field input[type='text'], textarea{
+  padding: 1em;
+  background-color: hsla(240, 6%, 12%, 1);
+  border: 1px solid rgb(81, 81, 84);
+  border-radius: 10px;
+}
+
+.form_field textarea{
+  min-height: 200px;
+}
+
+
+/* BUTTON STYLES */
+
+.btn, button, input[type="submit"] {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: hsla(348, 78%, 47%, 1);
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+.btn:hover, button:hover, input[type="submit"]:hover {
+  border-color: hsla(348, 78%, 77%, 1);
+}

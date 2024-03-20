@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Vite App</title>
+  </head>
+  <body>
+
+      <div id='header'>
+          <a href="/">
+              <h1 id='logo'>Notes</h1>
+          </a>
+        
+          <a href="form.html"><button>Add</button></a>
+      </div>
+
+      <div class='container'>
+        <div class='card card__body'>
+            <form>
+                <div class='form_field'>
+                  <label>Title:</label>
+                  <input type='text' name="title" placeholder='Enter title...'/>
+                </div>
+    
+                <div class='form_field'>
+                  <label>Body:</label>
+                  <textarea name="body" placeholder='Note body'></textarea>
+                </div>
+    
+                <div class='form_field'>
+                  <input type='submit' value="Add note"/>
+                </div>
+            </form>
+        </div>
+      </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
